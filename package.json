@@ -1,0 +1,31 @@
+{
+  "name": "image-pipeline-service",
+  "version": "1.0.0",
+  "description": "Express + Sharp + PGlite 图片异步处理流水线:任务队列、转码、缩略图、进度上报、权限与审计",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "smoke": "node scripts/smoke.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18406572644/gsb_02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/18406572644/gsb_02/issues"
+  },
+  "homepage": "https://github.com/18406572644/gsb_02#readme",
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "express": "^5.2.1",
+    "multer": "^2.4.0",
+    "sharp": "^0.35.4"
+  }
+}
