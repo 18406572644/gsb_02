@@ -1,0 +1,21 @@
+{
+  "name": "image-pipeline",
+  "version": "1.0.0",
+  "description": "Async image processing pipeline: Express + Sharp + PGlite",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node src/seed.js",
+    "smoke": "node test/smoke.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "express": "^4.22.3",
+    "multer": "^2.4.0",
+    "sharp": "^0.35.4"
+  }
+}
